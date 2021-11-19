@@ -1,0 +1,1144 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "/home/haonan/FIS/fis_frontend",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2021-04-02 12:45:14",
+            "filesum": 58,
+            "codesum": 21317,
+            "commentsum": 271,
+            "blanksum": 196,
+            "statistics": {
+                ".html": {
+                    "code": 21,
+                    "comment": 23,
+                    "blank": 0
+                },
+                ".txt": {
+                    "code": 6,
+                    "comment": 103,
+                    "blank": 15
+                },
+                ".json": {
+                    "code": 20008,
+                    "comment": 0,
+                    "blank": 4
+                },
+                ".js": {
+                    "code": 1112,
+                    "comment": 101,
+                    "blank": 129
+                },
+                ".map": {
+                    "code": 6,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".css": {
+                    "code": 101,
+                    "comment": 31,
+                    "blank": 11
+                },
+                ".md": {
+                    "code": 38,
+                    "comment": 12,
+                    "blank": 32
+                },
+                "": {
+                    "code": 18,
+                    "comment": 1,
+                    "blank": 5
+                },
+                ".Identifier": {
+                    "code": 6,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".svg": {
+                    "code": 1,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 1,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "build/asset-manifest.json"
+                },
+                {
+                    "filename": "build/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/index.html"
+                },
+                {
+                    "filename": "build/logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build/logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "build/manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "build/robots.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 7,
+                    "filename": "build/static/css/2.b07efd9f.chunk.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/css/2.b07efd9f.chunk.css.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 2,
+                    "filename": "build/static/css/main.9c899ce4.chunk.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/css/main.9c899ce4.chunk.css.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": "build/static/js/2.573e9150.chunk.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 0,
+                    "comment": 101,
+                    "filename": "build/static/js/2.573e9150.chunk.js.LICENSE.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/2.573e9150.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/3.a095b141.chunk.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/3.a095b141.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/main.b682e79e.chunk.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/main.b682e79e.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/runtime-main.3c58ce3e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/runtime-main.3c58ce3e.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 19891,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "filename": "public/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 23,
+                    "filename": "public/index.html"
+                },
+                {
+                    "filename": "public/logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public/logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "public/manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "public/robots.txt"
+                },
+                {
+                    "blank": 32,
+                    "code": 38,
+                    "comment": 12,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 5,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src/App.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 30,
+                    "comment": 3,
+                    "filename": "src/App.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src/App.test.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "src/BackupNavbar.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src/BlogList.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 536,
+                    "comment": 13,
+                    "filename": "src/canvasjs.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/canvasjs.min.js:Zone.Identifier"
+                },
+                {
+                    "blank": 4,
+                    "code": 40,
+                    "comment": 13,
+                    "filename": "src/canvasjs.react.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/canvasjs.react.js:Zone.Identifier"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "src/CanvasLineChart.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "src/ChangeMapView.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 36,
+                    "comment": 1,
+                    "filename": "src/ExploratoryPage.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src/FFA.js"
+                },
+                {
+                    "blank": 19,
+                    "code": 36,
+                    "comment": 5,
+                    "filename": "src/FreightMap.js"
+                },
+                {
+                    "blank": 26,
+                    "code": 76,
+                    "comment": 15,
+                    "filename": "src/Home.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 38,
+                    "comment": 21,
+                    "filename": "src/index.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 3,
+                    "filename": "src/index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src/logo.svg"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "src/Navbar.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "src/NavBar.module.css"
+                },
+                {
+                    "blank": 9,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "src/PlotlyLineChart.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 16,
+                    "comment": 17,
+                    "filename": "src/PlotlyRadarChart.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src/reportWebVitals.js"
+                },
+                {
+                    "blank": 20,
+                    "code": 137,
+                    "comment": 9,
+                    "filename": "src/RouteConfigurations.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 4,
+                    "filename": "src/setupTests.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 12,
+                    "comment": 2,
+                    "filename": "src/StaticShipCoordinates.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 26,
+                    "comment": 2,
+                    "filename": "src/useFetchGet.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 30,
+                    "comment": 3,
+                    "filename": "src/useFetchPost.js"
+                }
+            ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2021-07-05 14:38:46",
+            "filesum": 108,
+            "codesum": 67026,
+            "commentsum": 753,
+            "blanksum": 1011,
+            "statistics": {
+                ".json": {
+                    "code": 43259,
+                    "comment": 0,
+                    "blank": 12
+                },
+                ".html": {
+                    "code": 167,
+                    "comment": 26,
+                    "blank": 35
+                },
+                ".txt": {
+                    "code": 6,
+                    "comment": 103,
+                    "blank": 15
+                },
+                ".md": {
+                    "code": 38,
+                    "comment": 12,
+                    "blank": 32
+                },
+                "": {
+                    "code": 18,
+                    "comment": 1,
+                    "blank": 5
+                },
+                ".svg": {
+                    "code": 99,
+                    "comment": 2,
+                    "blank": 34
+                },
+                ".js": {
+                    "code": 23288,
+                    "comment": 568,
+                    "blank": 867
+                },
+                ".css": {
+                    "code": 101,
+                    "comment": 31,
+                    "blank": 11
+                },
+                ".Identifier": {
+                    "code": 44,
+                    "comment": 10,
+                    "blank": 0
+                },
+                ".map": {
+                    "code": 6,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 22,
+                    "code": 125,
+                    "comment": 23,
+                    "filename": "backupfiles/verticaledit.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "build/asset-manifest.json"
+                },
+                {
+                    "filename": "build/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/index.html"
+                },
+                {
+                    "filename": "build/logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "build/logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "build/manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "build/robots.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 7,
+                    "filename": "build/static/css/2.b07efd9f.chunk.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/css/2.b07efd9f.chunk.css.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 2,
+                    "filename": "build/static/css/main.9c899ce4.chunk.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/css/main.9c899ce4.chunk.css.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": "build/static/js/2.573e9150.chunk.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 0,
+                    "comment": 101,
+                    "filename": "build/static/js/2.573e9150.chunk.js.LICENSE.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/2.573e9150.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/3.a095b141.chunk.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/3.a095b141.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/main.b682e79e.chunk.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/main.b682e79e.chunk.js.map"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "build/static/js/runtime-main.3c58ce3e.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "build/static/js/runtime-main.3c58ce3e.js.map"
+                },
+                {
+                    "blank": 9,
+                    "code": 43143,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 42,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "filename": "public/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 23,
+                    "filename": "public/index.html"
+                },
+                {
+                    "filename": "public/logo192.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "public/logo512.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "public/manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "public/robots.txt"
+                },
+                {
+                    "blank": 32,
+                    "code": 38,
+                    "comment": 12,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 5,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src/App.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 37,
+                    "comment": 4,
+                    "filename": "src/App.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src/App.test.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "src/BackupNavbar.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 77,
+                    "comment": 0,
+                    "filename": "src/BarChart.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src/BlogList.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 536,
+                    "comment": 13,
+                    "filename": "src/canvasjs.min.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/canvasjs.min.js:Zone.Identifier"
+                },
+                {
+                    "blank": 4,
+                    "code": 40,
+                    "comment": 13,
+                    "filename": "src/canvasjs.react.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/canvasjs.react.js:Zone.Identifier"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 1,
+                    "filename": "src/CanvasLineChart.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "src/ChangeMapView.js"
+                },
+                {
+                    "blank": 36,
+                    "code": 169,
+                    "comment": 8,
+                    "filename": "src/CombinedPredictionAndWhatIfOutput.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 36,
+                    "comment": 1,
+                    "filename": "src/ExploratoryPage.js"
+                },
+                {
+                    "blank": 161,
+                    "code": 494,
+                    "comment": 84,
+                    "filename": "src/FFA.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 59,
+                    "comment": 5,
+                    "filename": "src/FreightMap.js"
+                },
+                {
+                    "blank": 61,
+                    "code": 120,
+                    "comment": 29,
+                    "filename": "src/Home.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src/images/ballast.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "src/images/ballast.svg:Zone.Identifier"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "src/images/ballast_new.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "src/images/ballast_new.svg:Zone.Identifier"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src/images/ballast_work.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "src/images/ballast_work.svg:Zone.Identifier"
+                },
+                {
+                    "filename": "src/images/demand_supply_snippet.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/images/demand_supply_snippet.png:Zone.Identifier"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src/images/FVE-image.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "src/images/FVE-image.svg:Zone.Identifier"
+                },
+                {
+                    "filename": "src/images/history_of_whatif.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/images/history_of_whatif.png:Zone.Identifier"
+                },
+                {
+                    "filename": "src/images/indicator_impact.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/images/indicator_impact.png:Zone.Identifier"
+                },
+                {
+                    "blank": 16,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src/images/laden.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "src/images/laden.svg:Zone.Identifier"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": "src/images/laden_new.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "src/images/laden_new.svg:Zone.Identifier"
+                },
+                {
+                    "filename": "src/images/model_compare.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src/images/model_compare.png:Zone.Identifier"
+                },
+                {
+                    "filename": "src/images/sample.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 2,
+                    "filename": "src/images/sample.png:Zone.Identifier"
+                },
+                {
+                    "blank": 0,
+                    "code": 42,
+                    "comment": 0,
+                    "filename": "src/images/water-drop.svg"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 2,
+                    "filename": "src/images/water-drop.svg:Zone.Identifier"
+                },
+                {
+                    "blank": 5,
+                    "code": 38,
+                    "comment": 21,
+                    "filename": "src/index.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 15,
+                    "comment": 3,
+                    "filename": "src/index.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 121,
+                    "comment": 63,
+                    "filename": "src/LastLine.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 82,
+                    "comment": 7,
+                    "filename": "src/LineChart.js"
+                },
+                {
+                    "blank": 40,
+                    "code": 124,
+                    "comment": 34,
+                    "filename": "src/LineChartDragTest.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 139,
+                    "comment": 26,
+                    "filename": "src/LineChartWithVerticalEdit.js"
+                },
+                {
+                    "blank": 23,
+                    "code": 139,
+                    "comment": 25,
+                    "filename": "src/LineChartWithVerticalEditBackup.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "src/logo.svg"
+                },
+                {
+                    "blank": 19,
+                    "code": 124,
+                    "comment": 8,
+                    "filename": "src/MultiNormalDist.js"
+                },
+                {
+                    "blank": 25,
+                    "code": 112,
+                    "comment": 12,
+                    "filename": "src/MultipleLineProduction.js"
+                },
+                {
+                    "blank": 27,
+                    "code": 110,
+                    "comment": 12,
+                    "filename": "src/MultipleLineTest.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 17,
+                    "comment": 1,
+                    "filename": "src/Navbar.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 28,
+                    "comment": 1,
+                    "filename": "src/NavBar.module.css"
+                },
+                {
+                    "blank": 15,
+                    "code": 81,
+                    "comment": 5,
+                    "filename": "src/NormalDistribution.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 81,
+                    "comment": 6,
+                    "filename": "src/NormalDistributionTest.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 18795,
+                    "comment": 0,
+                    "filename": "src/OceanBoundaries.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 15,
+                    "comment": 2,
+                    "filename": "src/PlotlyLineChart.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 16,
+                    "comment": 17,
+                    "filename": "src/PlotlyRadarChart.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src/reportWebVitals.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src/RotatedMarker.js"
+                },
+                {
+                    "blank": 25,
+                    "code": 460,
+                    "comment": 9,
+                    "filename": "src/RouteConfigurations.js"
+                },
+                {
+                    "blank": 21,
+                    "code": 110,
+                    "comment": 9,
+                    "filename": "src/SeriesDiff.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 4,
+                    "filename": "src/setupTests.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 12,
+                    "comment": 2,
+                    "filename": "src/StaticShipCoordinates.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 44,
+                    "comment": 6,
+                    "filename": "src/TestComponentPage.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 96,
+                    "comment": 11,
+                    "filename": "src/TimeSeriesLineChart.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src/useD3.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 26,
+                    "comment": 2,
+                    "filename": "src/useFetchGet.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 29,
+                    "comment": 4,
+                    "filename": "src/useFetchPost.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 50,
+                    "comment": 8,
+                    "filename": "src/WhatIfMap.js"
+                },
+                {
+                    "blank": 25,
+                    "code": 57,
+                    "comment": 21,
+                    "filename": "src/WhatIfMapTest.js"
+                },
+                {
+                    "blank": 121,
+                    "code": 510,
+                    "comment": 72,
+                    "filename": "src/WhatIfPage.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 89,
+                    "comment": 10,
+                    "filename": "src/ZoomChart.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 52,
+                    "comment": 0,
+                    "filename": "test_html/boat.html"
+                },
+                {
+                    "blank": 19,
+                    "code": 79,
+                    "comment": 3,
+                    "filename": "test_html/index.html"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "test_html/sample.html"
+                }
+            ]
+        }
+    ]
+}

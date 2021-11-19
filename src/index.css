@@ -6,6 +6,7 @@
   font-family: "Quicksand";
   color: #333;
 }
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -20,8 +21,14 @@
 .navbar .links {
   margin-left: auto;
 }
+
+/* a {
+  color: black !important;
+} */
 .navbar a {
   margin-left: 16px;
+  /* this is forcing the link to a specific color due to css conflict */
+  color: black !important;
   text-decoration: none;
   padding: 6px;
 }
@@ -30,12 +37,12 @@
 }
 .content {
   max-width: 100%;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
 }
 
 /* blog previews / list */
-.blog-preview {
+/* .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
@@ -47,4 +54,11 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
+} */
+
+/* #mapid { height: 1000px; } */
+.leaflet-container{
+  width: 100%;
+  height: 80vh;
+  /* tune for various other display options */
 }

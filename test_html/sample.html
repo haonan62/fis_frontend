@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /*
+        *
+        *   Arrange Data- the underlying interest calculations
+        *
+        */
+        function fv(initialValue, dep, rate, periods) {
+            // Degenerate case isn't handled by base equation
+            if (rate == 0) {
+                return initialValue + dep * periods;
+            }
+            return (initialValue * (1 + rate) ** periods) + (dep / rate * ((1 + rate) ** periods - 1))
+        }
+
+        function calculate(initial, deposit, monthlyIntRate, yrs) {
+            var arr = [];
+            for (var i = 0; i < yrs * 12; i++) {
+                var fval = fv(initial, deposit, monthlyIntRate, i)
+                arr.push(fval)
+            }
+            return arr
+        }
+    </script>
+    <script>
+        var principal = 0,
+            monthlyContribution = 100,
+            monthlyInterestRate = 0.05 / 12,
+            years = 45;
+
+        var data = calculate(principal, monthlyContribution, monthlyInterestRate, years)
+            .map(function (d, i) { return { month: i, value: d } });
+    </script>
+    <script>
+        // TODO Add sliders for each value
+            var outerHeight = 480, outerWidth = 960,
+                margin = { top: 20, right: 20, bottom: 30, left: 50 },
+                svg = d3.select("body").append("svg").attr("height", outerHeight).attr("width", outerWidth);
+
+            var width = +svg.attr("width") - margin.left - margin.right,
+                height = +svg.attr("height") - margin.top - margin.bottom,
+                g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"),
+                isCtrl, isShifted, monthlyContributionText;
+
+        var xScale = d3.scaleLinear()
+            .domain(d3.extent(data, function (d) { return d.month }))
+            .rangeRound([0, width]);
+
+        var yScale = d3.scaleLinear()
+            .domain(d3.extent(data, function (d) { return d.value }))
+            .rangeRound([height, 0]);
+
+        var lineGenerator = d3.line()
+            .x(function (d) { return xScale(d.month); })
+            .y(function (d) { return yScale(d.value); });
+        
+        var xAxis = g.append("g")
+            .classed("bottom-axis", true)
+            .call(d3.axisBottom(xScale))
+            .attr("transform", "translate(0," + height + ")")
+            .select(".domain")
+            .remove();
+
+        var yAxis = d3.axisLeft(yScale);
+        g.append("g")
+            .attr("class","left-axis")
+            .call(yAxis)
+            .append("text")
+                .attr("fill", "#000")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 6)
+                .attr("dy", "0.71em")
+                .attr("text-anchor", "end")
+                .text("Value ($)");
+        
+        var focus = g.append("g")
+            .attr("class", "focused")
+        .append("circle")
+            .attr("r", 5)
+            .attr("fill", "transparent")
+            .attr("stroke", 0)
+            .style("display", "none");
+
+        // locking mouse events here keeps them in the same area as data
+        var overlay = g.append("rect")
+            .attr("class", "overlay")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("fill", "transparent")
+            .on("mouseover", mouseover)
+            .on("mouseout", function() { focus.transition().attr("stroke", "transparent") })
+            .on("mousemove", mousemove);
+
+        monthlyContributionText = d3.select("body").selectAll(".monthly-contribution")
+            .data([monthlyContribution])
+        .enter()
+            .append("p")
+            .attr("class", "monthly-contribution")
+            .text(function(d) {return "Monthly Contribution: " + d})
+
+        principalText = d3.select("body").selectAll(".principal")
+            .data([principal])
+        .enter()
+            .append("p")
+            .attr("class", "principal")
+            .text(function(d) {return "Principal: " + d})
+
+        interestRateText = d3.select("body").selectAll(".interest-rate")
+            .data([monthlyInterestRate])
+        .enter()
+            .append("p")
+            .attr("class", "interest-rate")
+            .text(function(d) {return "Annual Interest Rate: " + d * 12 + "%"})
+
+        monthsText = d3.select("body").selectAll(".months")
+            .data([years])
+        .enter()
+            .append("p")
+            .attr("class", "months")
+            .text(function(d) {return "Months: " + d * 12})
+
+        g.call(d3.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
+
+        var path = g.selectAll("path.data").data([data])
+            .enter().append("svg:path")
+                .attr("class", "data")
+                .attr("fill", "none")
+                .attr("stroke", "steelblue")
+                .attr("stroke-linejoin", "round")
+                .attr("stroke-linecap", "round")
+                .attr("stroke-width", 2.5)
+                .attr("d", lineGenerator);
+
+        function mouseover() {
+            focus
+                .transition()
+                .style("display", null)
+                .attr("stroke", "red")
+        }
+
+        function mousemove() {
+            var x = d3.mouse(this)[0];
+            var i = Math.round(xScale.invert(x));
+            var pt = data[i];
+            focus
+                .attr("cx", xScale(pt["month"]))
+                .attr("cy", yScale(pt["value"]))
+        }
+
+        function dragstarted() {
+            if (d3.event.sourceEvent.shiftKey) {
+                isShifted = true;
+            } else if (d3.event.sourceEvent.ctrlKey || d3.event.sourceEvent.metaKey) { // hooray mac/PC nonsense
+                isCtrl = true;
+            }
+        }
+
+        function dragged() {
+            if (isShifted) {
+                var scaleFactor = (yScale.domain()[1] - yScale.domain()[0]) / 100;
+                principal += (-1 * d3.event.dy * scaleFactor);
+                if (principal < 0) { principal = 0}
+            } else if (isCtrl) {
+                var scaleFactor = 0.0001;
+                var newRateDirty = monthlyInterestRate + (-1 * d3.event.dy * scaleFactor);
+                var newRateClean = newRateDirty.toFixed(4)
+                monthlyInterestRate = Math.max(0, newRateClean);
+            } else {
+                monthlyContribution += (-1 * d3.event.dy); // stupid SVG coordinate system
+                if (monthlyContribution < 0) { monthlyContribution = 0}
+            }
+
+            data = calculate(principal, monthlyContribution, monthlyInterestRate, years)
+                .map(function (d, i) { return { month: i, value: d } });
+
+            path.data([data]).attr("d", lineGenerator)
+            monthlyContributionText.data([monthlyContribution]).text(function(d) {return "Monthly Contribution: " + d})
+            principalText.data([principal]).text(function(d) {return "Principal: " + d.toFixed(2)})
+            interestRateText.data([monthlyInterestRate]).text(function(d) {return "Annual Interest Rate: " + (d * 12).toFixed(3) + "%"})
+            monthsText.data([years]).text(function(d) {return "Number of Months: " + d * 12})
+        }
+
+        function dragended() {
+            var lineTransition = d3.transition()
+                .duration(750)
+                .ease(d3.easeExpInOut);
+                
+            isShifted = isCtrl = false;
+
+            // 0 Extent will break display of the y-axis
+            var newExtent = d3.extent(data, function (d) { return d.value });
+            if (newExtent[1] === 0) { newExtent = yScale.domain() }
+
+            yScale.domain(newExtent)
+            d3.select(".left-axis")
+                .transition(lineTransition)
+                .call(yAxis)
+
+            g.select("path.data")
+                .transition(lineTransition)
+                .attr("d", lineGenerator);
+
+            var x = d3.mouse(this)[0];
+            var i = Math.round(xScale.invert(x));
+            var pt = data[i];
+            focus
+                .attr("cx", xScale(pt["month"]))
+                .attr("cy", yScale(pt["value"]));
+        }
+
+    </script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ const useFetchPost = (url, postParam) => {
     const [isDataLoading, setIsDataLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(() => {
-        console.log("useeffect log");
+        // console.log("useeffect log");
         // resolved the cross site issue through modification on the server side
         fetch(url, {
             method: 'POST', headers: {
